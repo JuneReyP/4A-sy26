@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myJs.js"></script>
+</head>
+<body>
+    <p id="demo">Hello, World!</p>
+    <button onclick="testFunction()">Change value</button>
+    <button onclick="let a = confirm('Test');document.write(a)">Test</button>
+
+    <hr>
+    <!-- simple calculator -->
+    <h1 id="answer">0</h1>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>    
+    <button onclick="calculate()">Calculate with function</button>
+    <button onclick="var operator = document.getElementById('operator').value;var num1 = parseFloat(document.getElementById('num1').value);var num2 = parseFloat(document.getElementById('num2').value);">Calculate</button>
+    <button onclick="document.getElementById('answer').innerHTML = '0';">Clear</button>
+</body>
+</html>
